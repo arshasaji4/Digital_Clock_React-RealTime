@@ -3,7 +3,7 @@
 A simple and responsive Digital Clock built with React and Tailwind CSS. The application displays the current time and date, updating automatically every second using React Hooks.
 
 ## Live@
-[live@]()
+[live@](https://digital-clock-react-real-time.vercel.app/)
  
 ## 📸 Preview
 ![image](preview.png)
