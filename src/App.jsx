@@ -21,19 +21,26 @@ function App() {
   });
 
   return (
-    <div className="relative flex items-center justify-center h-screen w-full text-white font-orbitron">
+    <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <img
         src="https://media.istockphoto.com/id/2156774159/photo/modern-urban-parking-room-a-sleek-3d-illustration-showcasing-automotive-design-in-a-grunge.jpg?s=612x612&w=0&k=20&c=AAdwnWihFM1jRkJM1nANZgHFVZFsamPTjxf2hC1zjY8="
         alt="Background"
-        className="absolute w-full h-full object-cover mix-blend-overlay"
+        className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="relative flex flex-col items-center">
-        <h1 className="text-7xl font-bold">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Clock Card */}
+      <div className="relative z-10 text-center px-6 py-8 rounded-2xl bg-white/10 backdrop-blur-md shadow-2xl">
+        <h1 className="font-orbitron font-bold text-white tracking-wider
+                       text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
           {formattedTime}
         </h1>
 
-        <h2 className="text-3xl mt-4">
+        <h2 className="mt-4 text-white font-medium
+                       text-lg sm:text-xl md:text-2xl lg:text-3xl">
           {formattedDate}
         </h2>
       </div>
